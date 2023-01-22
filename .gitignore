@@ -15,3 +15,4 @@ tsconfig.tsbuildinfo
 
 # vim
 *.swp
+auth-router-context-api/
