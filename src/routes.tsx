@@ -10,9 +10,10 @@ import {
 import { ItemType } from 'antd/lib/menu/hooks/useItems';
 import { ReactNode } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Creatives } from './pages/Creatives';
+import { Users } from './pages/Users';
 import { Campaigns } from './pages/Campaigns';
 import { NewCampaign } from './pages/NewCampaign';
+import { NewUser } from './pages/NewUser';
 
 type MenuItem = ItemType & {
   children?: MenuItem[];
@@ -47,16 +48,16 @@ export const routes: MenuItem[] = [
     label: 'New Campaign',
   },
   {
-    component: <Creatives />,
+    component: <Users />,
     icon: <FileImageOutlined />,
-    key: '/creatives',
-    label: 'Creatives',
+    key: '/users',
+    label: 'Users',
   },
   {
-    component: <>Add Funds</>,
+    component: <NewUser />,
     icon: <DollarOutlined />,
-    key: '/add-funds',
-    label: 'Add Funds',
+    key: '/newUser',
+    label: 'Add User',
   },
   {
     component: <>Reports</>,

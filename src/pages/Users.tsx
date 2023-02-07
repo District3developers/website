@@ -4,8 +4,8 @@ import { db } from '../firebase';
 import { useCollectionQuery } from '../hooks/useCollectionQuery';
 import { dynamicFirebaseColumn } from '../utils/dynamicFirebaseColumn';
 
-export const Creatives: React.FC = () => {
-  const { loading, data } = useCollectionQuery(collection(db, 'Creative'));
+export const Users: React.FC = () => {
+  const { loading, data } = useCollectionQuery(collection(db, 'Users'));
 
   const { dataSource, columns } = dynamicFirebaseColumn(data);
 
